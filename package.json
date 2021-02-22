@@ -10,7 +10,7 @@
     "prettier-write": "npx prettier --write .",
     "test": "npx jest",
     "test-coverage": "npx jest --collect-coverage",
-    "ci": "npm run test"
+    "ci": "npx prettier --write . && npx prettier --check . && npm run prettier-check && npm run test"
   },
   "dependencies": {
     "express": "^4.17.1"
