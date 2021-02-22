@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "main"
+  pull_request:
+    branches:
+      - "main"
 
 jobs:
   check-code:
@@ -14,4 +17,3 @@ jobs:
         uses: actions/checkout@v2
       - run: npm install
       - run: npm run ci
-
